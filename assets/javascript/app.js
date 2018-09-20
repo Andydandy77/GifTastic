@@ -4,7 +4,6 @@ $(document).ready(function() {
     $(document).on("click", ".createGif", createGifs);
     $(document).on("click", ".gif", clickGif);
     $(document).on("click", ".btn-secondary", function(){
-        console.log("hi")
         download($(this).attr("download") , "text.gif");
     });
 
