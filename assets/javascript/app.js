@@ -1,4 +1,6 @@
 $(document).ready(function() {
+
+    // These enable dynamically created elements to get clicked and call their respective functions
     $(document).on("click", ".createGif", createGifs);
     $(document).on("click", ".gif", clickGif);
     $(document).on("click", ".btn-secondary", function(){
@@ -6,13 +8,14 @@ $(document).ready(function() {
         download($(this).attr("download") , "text.gif");
     });
 
+    // Initializes disney characters and the api key
     var characters = ["Tangled", "Snow White", "Frozen", "Mickey Mouse", "Cinderella", "The Lion King", "Pocahontas"];
     var apiKey = "edVrCjaiJ8xBv6zOO9y82OmXAhSfFJ98";
     var responses = [];
     var limit = 10;
 
     
-
+    // This initializes the buttons with the disney characters on it
     function createButtons() {
         console.log("creating buttons")
         $(".buttons").unbind().empty();
@@ -27,7 +30,8 @@ $(document).ready(function() {
     }   
       
 
-   
+   // This makes an Ajax call to GIPHY and display them below the buttons.
+   // This also makes an Ajax calls to OMDB to display the related disney character's movie details
     function createGifs(){
         
         $("#gifs").empty();
@@ -107,7 +111,7 @@ $(document).ready(function() {
 
     }
             
-        
+    // This allows the user to click the gif and play it if it's frozen, and freezes it when they are playing
     function clickGif() {
         
         //console.log($(this).attr("still"));
@@ -125,13 +129,8 @@ $(document).ready(function() {
         }
     }   
 
-    // function downloadGif() {
-    //     console.log($(this).attr("download"));
-    //     download($(this).attr("download"), "test.gif");
-    // }
-    
 
-
+    // This dynamically adds a new character button based on the user's input
     $("#addChar").on("click", function(event) {
         //console.log($(this))
         event.preventDefault();
@@ -142,7 +141,8 @@ $(document).ready(function() {
         createButtons();
 
     });
-    
+
+    // This allows the user to 10 additional gifs with each click. This changes the limit parameter called in the AJAX call
     $("#addMoreGifs").on("click" , function() {
         console.log("gifs added")
         limit+=10;
@@ -156,7 +156,7 @@ $(document).ready(function() {
 
 
 
-
+    // This allows the user to download the gif when the download button is clicked.
     function download(data, strFileName, strMimeType) {
 	
         var self = window, // this script is only for browsers anyway...
