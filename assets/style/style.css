@@ -1,3 +1,7 @@
+body {
+    background-image: url("../images/back.jpg");
+    background-size: 1440px 750px;
+}
 .btn {
     margin-left: 25px;
     margin-top: 25px;
@@ -7,8 +11,12 @@
     float:right;
     width: 300px;
     margin-right: 100px;
-    margin-top: 50px;
+    margin-top: 100px;
+    
+    color: #FFF;
 }
+
+
 
 
 
