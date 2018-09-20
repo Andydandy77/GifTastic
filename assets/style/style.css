@@ -1,0 +1,31 @@
+.btn {
+    margin-left: 25px;
+    margin-top: 25px;
+}
+
+.form-group {
+    float:right;
+    width: 300px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+
+
+@media screen and (max-width:375px) {
+    .form-group {
+        width: 200px;
+        margin-top:50px;
+        margin-right: 20%;
+    }
+
+}
+
+@media screen and (max-width:768px) {
+    .form-group {
+        width: 200px;
+        margin-top:50px;
+        margin-right: 20%;
+    }
+
+}
