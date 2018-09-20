@@ -7,7 +7,7 @@ On the right the user can input a new disney character and the page dynamically 
 Additionally, when the gifs are generated the page calls on OMDB's API and displays the associated movie's title, release date and IMDB's rating.
 
 <p align="center">
-  <img src="assets/images/test.png" width="600" title="hover text">
+  <img src="assets/images/test.jpg" width="600" title="hover text">
 </p>
 
 
