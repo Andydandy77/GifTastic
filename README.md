@@ -1,6 +1,6 @@
 # GifTastic
 
-On this webpage, the user can display gifs by hitting Giphy's API of disney characters by clicking on the buttons at the top. Once the gifs appear, the page also displays the gif's rating below it and a download button (if clicked the page will download the selected gif). 
+On this webpage, the user can display gifs by hitting Giphy's API of disney characters by clicking on the buttons at the top. Once the gifs appear, the page also displays the gif's rating below it and a download button (if clicked the page will download the selected gif). The user can click on the frozen gif and the gif will play. Once clicked again, the gif will restart and stop, until subsequent clicks.
 
 On the right the user can input a new disney character and the page dynamically adds a new button to the page of the disney character. Once added, the user can click the new button and generate new disney character gifs.
 
