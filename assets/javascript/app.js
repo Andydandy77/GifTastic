@@ -9,6 +9,7 @@ $(document).ready(function() {
     var characters = ["Tangled", "Snow White", "Frozen", "Mickey Mouse", "Cinderella", "The Lion King", "Pocahontas"];
     var apiKey = "edVrCjaiJ8xBv6zOO9y82OmXAhSfFJ98";
     var responses = [];
+    var limit = 10;
 
     
 
@@ -34,8 +35,8 @@ $(document).ready(function() {
         
         var q = $(this).attr("id");
 
-        var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + q + "&api_key="+ apiKey +"&limit=10";
-        
+        var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + q + "&api_key="+ apiKey +"&limit=" + limit;
+        console.log(queryURL);
         
         
         $.ajax({
@@ -141,7 +142,13 @@ $(document).ready(function() {
         createButtons();
 
     });
+    
+    $("#addMoreGifs").on("click" , function() {
+        console.log("gifs added")
+        limit+=10;
 
+
+    });
     createButtons();
 
     
