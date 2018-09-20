@@ -34,7 +34,7 @@ $(document).ready(function() {
         
         var q = $(this).attr("id");
 
-        var queryURL ="http://api.giphy.com/v1/gifs/search?q=" + q + "&api_key="+ apiKey +"&limit=10";
+        var queryURL ="https://api.giphy.com/v1/gifs/search?q=" + q + "&api_key="+ apiKey +"&limit=10";
         
         
         
